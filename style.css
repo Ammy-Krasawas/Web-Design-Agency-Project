@@ -1,0 +1,73 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.span-blue {
+  color: #191970;
+}
+
+
+.left{
+  float: left;
+  width: 45%;
+}
+
+.right{
+  float: right;
+  width: 45%;
+}
+
+.card img {
+  position: relative;
+  float: left;
+  margin-right: 50px;
+  height: 200px;
+  width: 300px;
+}
+
+@media (max-width: 680px) {
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .logo{
+    width: 100px;
+  }
+  .left{
+    display: block;
+    width: 100%;
+  }
+  .right {
+    display: block;
+    width: 100%;
+  }
+  .card {
+    text-align: justify;
+  }
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  clear: both;
+}
+
+/*The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. 
+If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.*/
